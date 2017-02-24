@@ -1,0 +1,36 @@
+{
+    "name": "riskio/tactician-module",
+    "description": "Tactician module for Zend Framework",
+    "type": "library",
+    "keywords": [
+        "zf2", "tactician"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/RiskioFr/tactician-module",
+    "authors": [
+        {
+            "name": "Nicolas Eeckeloo",
+            "email": "neeckeloo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "container-interop/container-interop": "^1.1.0",
+        "league/tactician": "^1.0",
+        "league/tactician-container": "^1.0",
+        "zendframework/zend-servicemanager": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TacticianModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TacticianModule\\Test\\": "tests/"
+        }
+    }
+}
