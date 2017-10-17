@@ -15,9 +15,8 @@
     ],
     "require": {
         "php": "^7.0",
-        "container-interop/container-interop": "^1.1.0",
         "league/tactician": "^1.0",
-        "league/tactician-container": "^1.0",
+        "league/tactician-container": "^2.0",
         "zendframework/zend-servicemanager": "~3.0"
     },
     "require-dev": {
