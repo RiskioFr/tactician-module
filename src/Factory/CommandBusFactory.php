@@ -1,10 +1,13 @@
 <?php
+
+declare(strict_types=1);
+
 namespace TacticianModule\Factory;
 
-use Interop\Container\ContainerInterface;
 use League\Tactician\CommandBus;
+use Psr\Container\ContainerInterface;
 
-class CommandBusFactory
+final class CommandBusFactory
 {
     public function __invoke(ContainerInterface $container) : CommandBus
     {

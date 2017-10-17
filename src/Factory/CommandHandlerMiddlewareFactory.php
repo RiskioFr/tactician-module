@@ -1,10 +1,13 @@
 <?php
+
+declare(strict_types=1);
+
 namespace TacticianModule\Factory;
 
-use Interop\Container\ContainerInterface;
 use League\Tactician\Handler\CommandHandlerMiddleware;
+use Psr\Container\ContainerInterface;
 
-class CommandHandlerMiddlewareFactory
+final class CommandHandlerMiddlewareFactory
 {
     public function __invoke(ContainerInterface $container) : CommandHandlerMiddleware
     {
