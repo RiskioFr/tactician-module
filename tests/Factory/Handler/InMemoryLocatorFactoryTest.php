@@ -1,12 +1,15 @@
 <?php
+
+declare(strict_types=1);
+
 namespace TacticianModule\Test\Factory\Handler;
 
-use Interop\Container\ContainerInterface;
 use League\Tactician\Handler\Locator\InMemoryLocator;
 use PHPUnit\Framework\TestCase;
+use Psr\Container\ContainerInterface;
 use TacticianModule\Factory\Handler\InMemoryLocatorFactory;
 
-class InMemoryLocatorFactoryTest extends TestCase
+final class InMemoryLocatorFactoryTest extends TestCase
 {
     /**
      * @test
@@ -29,6 +32,7 @@ class InMemoryLocatorFactoryTest extends TestCase
         $container = $this->createMock(ContainerInterface::class);
         $container->method('get')->with('config')->willReturn($config);
 
+        /* @var $container ContainerInterface */
         return $container;
     }
 }

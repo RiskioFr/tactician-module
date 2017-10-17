@@ -1,15 +1,18 @@
 <?php
+
+declare(strict_types=1);
+
 namespace TacticianModule\Test\Factory;
 
-use Interop\Container\ContainerInterface;
 use League\Tactician\Handler\CommandHandlerMiddleware;
 use League\Tactician\Handler\CommandNameExtractor\CommandNameExtractor;
 use League\Tactician\Handler\Locator\HandlerLocator;
 use League\Tactician\Handler\MethodNameInflector\MethodNameInflector;
 use PHPUnit\Framework\TestCase;
+use Psr\Container\ContainerInterface;
 use TacticianModule\Factory\CommandHandlerMiddlewareFactory;
 
-class CommandHandlerMiddlewareFactoryTest extends TestCase
+final class CommandHandlerMiddlewareFactoryTest extends TestCase
 {
     /**
      * @test
@@ -44,6 +47,7 @@ class CommandHandlerMiddlewareFactoryTest extends TestCase
         ];
         $container->method('get')->will($this->returnValueMap($map));
 
+        /* @var $container ContainerInterface */
         return $container;
     }
 }
