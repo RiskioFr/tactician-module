@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 use League\Tactician\CommandBus;
 use League\Tactician\Container\ContainerLocator;
 use League\Tactician\Handler\CommandNameExtractor\ClassNameExtractor;
