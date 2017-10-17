@@ -1,42 +1,34 @@
-Tactician module for ZF3
-========================
+Tactician module for Zend Framework
+===================================
 
 Module to integrate Tactician with Zend Framework projects.
 
-[![Build Status](https://img.shields.io/travis/RiskioFr/tactician-module.svg?style=flat)](http://travis-ci.org/RiskioFr/tactician-module)
-[![Latest Stable Version](http://img.shields.io/packagist/v/riskio/tactician-module.svg?style=flat)](https://packagist.org/packages/riskio/tactician-module)
-[![Total Downloads](http://img.shields.io/packagist/dt/riskio/tactician-module.svg?style=flat)](https://packagist.org/packages/riskio/tactician-module)
+[![Build Status](https://img.shields.io/travis/RiskioFr/tactician-module.svg?style=flat-square)](http://travis-ci.org/RiskioFr/tactician-module)
+[![Latest Stable Version](http://img.shields.io/packagist/v/riskio/tactician-module.svg?style=flat-square)](https://packagist.org/packages/riskio/tactician-module)
+[![Build Status](https://img.shields.io/travis/RiskioFr/tactician-module.svg?style=flat-square)](http://travis-ci.org/RiskioFr/tactician-module)
+[![Total Downloads](http://img.shields.io/packagist/dt/riskio/tactician-module.svg?style=flat-square)](https://packagist.org/packages/riskio/tactician-module)
 
-Requirements
-------------
+## Requirements
 
-* PHP 7
-* Zend Framework 3
+* PHP 7.0+
+* [league/tactician ^1.0](https://github.com/thephpleague/tactician)
+* [league/tactician-container ^2.0](https://github.com/thephpleague/tactician-container)
+* [zendframework/zend-servicemanager ^3.0](https://github.com/zendframework/zend-servicemanager)
 
-Installation
-------------
+## Installation
 
 Tactician module only officially supports installation through Composer. For Composer documentation, please refer to
 [getcomposer.org](http://getcomposer.org/).
 
 You can install the module from command line:
-```sh
-$ php composer.phar require riskio/tactician-module:^1.0
-```
 
-Alternatively, you can also add manually the dependency in your `composer.json` file:
-```json
-{
-    "require": {
-        "riskio/tactician-module": "^1.0"
-    }
-}
+```sh
+$ composer require riskio/tactician-module
 ```
 
 Enable the module by adding `TacticianModule` key to your `application.config.php` file.
 
-Default configuration
----------------------
+## Default configuration
 
 ```php
 <?php
@@ -56,3 +48,19 @@ return [
     ],
 ];
 ```
+
+## Testing
+
+``` bash
+$ vendor/bin/phpunit
+```
+
+## Credits
+
+- [Nicolas Eeckeloo](https://github.com/neeckeloo)
+- [Thomas Dutrion](https://github.com/tdutrion)
+- [All Contributors](https://github.com/RiskioFr/idempotency-module/contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](https://github.com/RiskioFr/tactician-module/blob/master/LICENSE) for more information.
