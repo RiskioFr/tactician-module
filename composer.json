@@ -31,5 +31,11 @@
         "psr-4": {
             "TacticianModule\\Test\\": "tests/"
         }
+    },
+    "extra": {
+        "zf": {
+            "config-provider": "TacticianModule\\ConfigProvider",
+            "module": "TacticianModule\\Module"
+        }
     }
 }
